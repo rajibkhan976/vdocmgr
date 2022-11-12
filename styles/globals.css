@@ -1,0 +1,91 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.custom-file-control-label {
+  width: 100%;
+  cursor: pointer;
+  /* Style as you please, it will become the visible UI component. */
+}
+
+.custom-file-control {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.custom-toast {
+  width: 326px;
+  height: 69px;
+  background-color: #F7F7F7;
+  border-radius: 2px;
+  top: 4px;
+  right: 4px;
+}
+
+.custom-tooltip-container:hover .custom-tooltip {
+  display: flex;
+}
+
+.custom-tooltip {
+  display: none;
+  width: 345px;
+  height: 48px;
+  background-color: #000000;
+  top: 1.5rem;
+  left: -4rem;
+  border-radius: 1px;
+  color: #F7F7F7;
+}
+
+.custom-copy-btn {
+  color: #0000FF;
+  text-decoration: underline;
+  right: 8px;
+}
+
+.custom-cross-btn {
+  background-color: #D8D8D8;
+  color: #000000;
+  border-radius: 1px;
+  padding: 10px 10px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
